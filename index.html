@@ -45,10 +45,10 @@
                 <div class="col-md-7">
                     <div class="text-uppercase text-white opacity-50 pl-1 ps-5" style="color: rgb(253, 238, 238); padding-top: 120px; font-size: 1.4em;">creative design agency</div>
                     <div class="display-1 text-white ps-5 pt-2 pb-2">We live to turn great ideas</div>
-                    <div id='id' class="text-white opacity-50 pl-1 ps-5 pt-5 pb-5">Image from <span style="text-decoration: underline;">Freepik</span></div>
+                    <div class="text-white opacity-50 pl-1 ps-5 pt-5 pb-5">Image from <span style="text-decoration: underline;">Freepik</span></div>
                 </div>
                 <div class="col-md-5">
-                    <div class="text-white opacity-50 pe-5" style="color: rgb(253, 238, 238); padding-top: 120px; font-size: 1.5em;">
+                    <div id='id' class="text-white opacity-50 pe-5" style="color: rgb(253, 238, 238); padding-top: 120px; font-size: 1.5em;">
 			<section>
 				<p>We combine local knowledge with global expertise, strategy with design, empathy with creativity, 
                     meaning with magic. Reach out to discuss how we might help you accelerate change.</p>
@@ -142,9 +142,9 @@
 	let elem = document.getElementById('id');
 	function style() {
 		if(window.innerWidth <= 576) {
-			elem.classList.remove('pb-5');
+			elem.style.paddingTop = '10px';
 		} else {
-			elem.classList.add('pb-5');
+			elem.style.paddingTop = '120px';
 		}
 	}
 	setInterval(style, 100);
